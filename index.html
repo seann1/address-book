@@ -9,44 +9,47 @@
   </head>
   <body>
     <div class="container">
-      <h1>To Do List</h1>
+      <h1>To Do</h1>
 
       <div class="row">
         <div class="col-md-6">
-          <h2>Add Name and Task:</h2>
+          <h2>Create a List</h2>
           <form id="task-list">
             <div class="form-group">
-              <label for="new-first-name">First Name</label>
-              <input type="text" class="form-control" id="new-first-name">
+              <label for="new-first-list">Name</label>
+              <input type="text" class="form-control" id="new-list">
             </div>
-            <div class="form-group">
-              <label for="new-last-name">Last Name</label>
-              <input type="text" class="form-control" id="new-last-name">
+            <div id="new-list" >
             </div>
-            <div class="form-group">
-              <label for="new-first-task">First Task</label>
-              <input type="text" class="form-control" id="new-first-task">
-            </div>
-
-            <span class="btn btn-primary" id="add-task">Another task</span>
-
-            <button type="submit" class="btn">Add</button>
+            <button type="submit" class="btn">CREATE</button>
           </form>
 
-          <h2>Tasks:</h2>
-          <ul id="tasks">
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <div id="show-tasks">
-            <h2></h2>
-
-            <p>First name: <span class="first-name"></span></p>
-            <p>Last name: <span class="last-name"></span></p>
-            <p>Task: <span class="tasked"></span></p>
-          </div>
-        </div>
+          <form id="tasks-form">
+            <h2>Lists:</h2>
+            <ul id="list">
+            </ul>
+            </div>
+            <div class="col-md-6">
+              <div id="show-lists">
+                <h2></h2>
+                <ul id="tasks">
+                </ul>
+                <p><span class="first-task"></span></p>
+                <h3>Add a task</h3>
+                <div class="form-group">
+                  <label for="new-tasks">Description</label>
+                  <input type="text" class="form-control" id="new-tasks">
+                </div>
+                <span class="btn btn-primary" id="add-tasks">Add</span>
+              </div>
+            </div>
+          </form>
       </div>
     </div>
   </body>
 </html>
+
+<!-- git remote add initials GITHUBURL  for both pais
+
+push:
+git push initials master -->

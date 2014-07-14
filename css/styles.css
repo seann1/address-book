@@ -1,12 +1,12 @@
-#show-tasks {
+#show-lists {
   display: none;
 }
 
-.task {
+.list {
   cursor: pointer;
   color: #0088cc;
 }
 
-.task:hover {
+.list:hover {
   text-decoration: underline;
 }
