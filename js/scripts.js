@@ -1,17 +1,3 @@
-// $(document).ready(function(){
-//   $("form#task-list").submit(function(event){
-//     event.preventDefault();
-//     $("#add-task").click(function() {
-//       $("#new-task").append('<div class="new-task">' +
-//                                  '<div class="form-group">' +
-//                                    '<label for="new-street">New Task</label>' +
-//                                    '<input type="text" class="form-control new-task">' +
-//                                  '</div>' );
-//     });
-//   });
-// });
-
-
 $(document).ready(function(){
   $("form#task-list").submit(function(event){
     event.preventDefault();
@@ -29,11 +15,19 @@ $(document).ready(function(){
       $("#show-lists h2").text(newList.list);
     });
 
-    $("#add-tasks").click(function() {
+    /*
+    $(".new-jobs").each(function(){
+      var inputtedTask = $(this).find("input#new-tasks").val();
+      var newTask = { description: inputtedTask };
+      newList.tasks.push(newTask);
+    });
+    */
+
+    $("#add-tasks").last().click(function() {
       var inputtedTask = $("input#new-tasks").val();
       var newTask = { description: inputtedTask };
       newList.tasks.push(newTask);
-      console.log(newList.tasks);
+      $("ul#tasks").text("");
       newList.tasks.forEach(function(task) {
         $("ul#tasks").append("<li><span class='task'>" + task.description + "</li></span>");
       });
